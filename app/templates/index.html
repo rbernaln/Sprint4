@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medical Records</title>
+</head>
+<body>
+    <h1>Welcome to the Medical Records Application</h1>
+    <h2>Patients:</h2>
+    <ul>
+        {% for patient in patients %}
+        <li>{{ patient }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Vital Signs:</h2>
+    <ul>
+        {% for vital_sign in vital_signs %}
+        <li>{{ vital_sign }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Consultations:</h2>
+    <ul>
+        {% for consultation in consultations %}
+        <li>{{ consultation }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Doctors:</h2>
+    <ul>
+        {% for doctor in doctors %}
+        <li>{{ doctor }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
